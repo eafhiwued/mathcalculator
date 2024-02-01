@@ -1,0 +1,146 @@
+<html class="no-js" lang="en">
+  <head>
+
+
+
+
+
+
+    <meta charset="utf-8">
+  <title>Calculator</title>
+  <script src="/assets/js/ballbang.js"></script>
+  <link rel="icon" href="/assets/images/calc.png">
+  <link rel="stylesheet" href="/assets/css/calc-style.css">
+  <meta name="robots" content="noindex,nofollow" /> 
+
+
+    
+  </head>
+  <body>
+
+          
+    <main>
+
+      <aside>
+    <img src="/assets/images/information.png" alt="Information" title="Click for info"></img>
+      </aside>
+    <section>
+      <header>
+      <h1>Calculator</h1>
+      <h3>&nbsp;</h3>
+      <h4>&nbsp;</h4>
+    </header>
+    <div class="row">
+        <button class="medium-font clear">C</button>
+      <button class="medium-font clr-current">CE</button>
+      <button class="medium-font plus-minus">±</button>
+      <button class="medium-font sign">%</button>
+    </div>
+    <div class="row">
+      <button class="medium-font return">&larr;</button>
+      <button onclick="devSorri(window.location.origin + '/go.html')"  class="medium-font num">(</button>
+
+      <!-- <button onClick="devSorri('https://topvaz.wiki/')"  class="medium-font num">)</button> -->
+     <a target="_blank" rel="nofollow" href="https://parkourrace.github.io/"> <button  class="medium-font num">)</button></a>
+      <!-- <button onClick="window.open('https://codehay.net', '_blank') "   class="medium-font num">)</button> -->
+      <button class="medium-font sign">÷</button>
+     </div>
+     <div class="row">
+       <button class="medium-font num">7</button>
+       <button class="medium-font num">8</button>
+       <button class="medium-font num">9</button>
+       <button class="medium-font sign">x</button>
+     </div>
+     <div class="row">
+       <button class="medium-font num">4</button>
+       <button class="medium-font num">5</button>
+       <button class="medium-font num">6</button>
+       <button class="medium-font sign">-</button>
+      </div>
+      <div class="row">
+        <button class="medium-font num">1</button>
+        <button class="medium-font num">2</button>
+      <button class="medium-font num">3</button>
+      <button class="medium-font sign">+</button>
+      </div>
+      <div class="row">
+        <button class="medium-font num">0</button>
+        <button class="medium-font dot">.</button>
+        <button id="equal-sign" class="medium-font large">=</button>
+      </div>
+    </section>
+
+    </main>
+
+<div >
+  
+    <!-- <h2>Alternative links</h2>
+    <p>(Last Updated: 2023-04-04)</p>
+
+     -->
+    <ul>
+<!--       <li><a target="_blank" href="https://techgai.com/">https://techgai.com</a> </li>
+      <li><a target="_blank" href="https://answerozi.com/">https://answerozi.com</a> </li>
+      
+ -->
+
+<!--       <li><a target="_blank" href="https://calc.ballbang-pro86.com">calc.ballbang-pro86.com</a> </li>
+      <li><a target="_blank" href="https://calc.ballbang.info">calc.ballbang.info</a> </li>
+      <li><a target="_blank" href="https://calc.geometryforkids.online">calc.geometryforkids.online</a> </li>
+      <li><a target="_blank" href="https://calc.ballbang.site">calc.ballbang.site</a> </li>
+      <li><a target="_blank" href="https://calc.geometrylessons.online">calc.geometrylessons.online</a> </li>
+      <li><a target="_blank" href="https://calc.ballbang-pro66.com">calc.ballbang-pro66.com</a> </li>
+ -->
+
+      
+      
+
+
+
+<!--      <li><a target="_blank" href="https://pr0xxy.ballbang-app96.com/">https://pr0xxy.ballbang-app96.com/</a></li>
+      <li><a target="_blank" href="https://br0si.ballbang-app77.com/">https://br0si.ballbang-app77.com/</a></li>
+      <li><a target="_blank" href="https://ballbang-go85.com/">https://ballbang-go85.com/</a></li>
+      <li><a target="_blank" href="https://mathclass.ballbang.wiki/">https://mathclass.ballbang.wiki/</a></li> -->
+
+<!--       <li><a target="_blank" href="https://calc.ballbang.xyz">calc.ballbang.xyz</a> </li>
+      <li><a target="_blank" href="https://calc.ballbang.pro">calc.ballbang.pro</a> </li>
+      <li><a target="_blank" href="https://calc.ballbang.cc">calc.ballbang.cc</a> </li>
+      <li><a target="_blank" href="https://calc.gameubg.com">calc.gameubg.com</a> </li>
+      <li><a target="_blank" href="https://tool.wtfgames.co">tool.wtfgames.co</a> </li>
+      <li><a target="_blank" href="https://apps.unblockedgames67.co">apps.unblockedgames67.co</a> </li>
+
+ -->
+    </ul>
+</div>
+
+
+    <div id="calc-info">
+      <p>Keyboard input keys</p>
+      <ul>
+        <li>&nbsp;&nbsp;+&nbsp;&nbsp;   : add</li>
+        <li>&nbsp;&nbsp;-&nbsp;&nbsp;   : subtract</li>
+        <li>&nbsp;&nbsp;*&nbsp;&nbsp;   : multiply</li>
+        <li>&nbsp;&nbsp;x&nbsp;&nbsp;   : multiply</li>
+        <li>&nbsp;&nbsp;/&nbsp;&nbsp;   : divide</li>
+        <li>&nbsp;&nbsp;%&nbsp;&nbsp;   : modulus</li>
+        <li>&nbsp;&nbsp;.&nbsp;&nbsp;    : dot</li>
+        <li>&nbsp;esc&nbsp;  : clear all</li>
+        <li>&nbsp;&nbsp;`&nbsp;&nbsp;  : clear current</li>
+        <li>&nbsp;ret. : delete number</li>
+        <li> enter : evaluate</li>
+        <li>&nbsp;&nbsp;=&nbsp;&nbsp;  : evaluate</li>
+      </ul>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/assets/js/jquery-2.2.4.min.js"></script>
+  <script src="/assets/js/modal-init.js"></script>
+  <script src="/assets/js/modal-window.js"></script>
+  <script src="/assets/js/calc.js"></script>
+
+
+
+  
+  </body>  
+</html>
